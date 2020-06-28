@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <data>
+
+        <variable
+            name="forgotPassword"
+            type="com.envirocleanadmin.ui.activity.ForgetPasswordActivity" />
+    </data>
+
+    <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:focusable="false"
+        android:focusableInTouchMode="true"
+        tools:context=".ui.activity.ForgotPasswordActivity">
+
+        <include
+            android:id="@+id/toolbarLayout"
+            layout="@layout/app_toolbar" />
+
+        <fragment
+            android:id="@+id/map"
+            android:name="com.appolica.interactiveinfowindow.fragment.MapInfoWindowFragment"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_gravity="center"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/toolbarLayout" />
+
+        <ToggleButton
+            android:id="@+id/mapChangeToggle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/_8sdp"
+            android:checked="false"
+            android:text="@string/satellite_map_off"
+            android:textOff="@string/satellite_map_on"
+            android:textOn="@string/satellite_map_off"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

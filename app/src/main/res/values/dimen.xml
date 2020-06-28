@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--text dimension-->
+    <dimen name="tiny">8sp</dimen>
+    <dimen name="small">12sp</dimen>
+    <dimen name="regular">14sp</dimen>
+    <dimen name="medium">16sp</dimen>
+    <dimen name="medium2">18sp</dimen>
+    <dimen name="large">20sp</dimen>
+    <dimen name="extra_large">24sp</dimen>
+    <dimen name="huge">30sp</dimen>
+
+    <!--padding dimension-->
+    <dimen name="tiny_padding">@dimen/_2sdp</dimen>
+    <dimen name="small_padding">@dimen/_4sdp</dimen>
+    <dimen name="regular_padding">@dimen/_6sdp</dimen>
+    <dimen name="medium_padding">@dimen/_8sdp</dimen>
+    <dimen name="large_padding">@dimen/_10sdp</dimen>
+    <dimen name="extra_large_padding">@dimen/_12sdp</dimen>
+    <dimen name="huge_padding">@dimen/_14sdp</dimen>
+    <dimen name="extra_huge_padding">@dimen/_20sdp</dimen>
+    <dimen name="highest_padding">@dimen/_40sdp</dimen>
+
+</resources>

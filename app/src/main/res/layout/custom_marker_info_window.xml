@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:padding="@dimen/_8sdp">
+
+        <LinearLayout
+            android:id="@+id/liTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/tvAreaName"
+                style="@style/medium_poppins_medium"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:textColor="@color/black"
+                tools:text="Area 2" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/ivEditLocation"
+                android:layout_width="@dimen/_15sdp"
+                android:layout_height="@dimen/_15sdp"
+                android:layout_gravity="center"
+                android:layout_marginStart="@dimen/_5sdp"
+                android:drawableStart="@drawable/ic_edit"
+                android:scaleType="center" />
+
+        </LinearLayout>
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tvAreaDistance"
+            style="@style/reg_poppins_reg"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/gray4"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/liTitle"
+            tools:text="10 km away" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/btnViewDirection"
+            style="@style/reg_poppins_reg"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_3sdp"
+            android:background="@drawable/rounded_corner_blue_square"
+            android:paddingStart="@dimen/_10sdp"
+            android:paddingTop="@dimen/_3sdp"
+            android:paddingEnd="@dimen/_10sdp"
+            android:paddingBottom="@dimen/_3sdp"
+            android:text="@string/btn_view_direction"
+            android:textColor="@color/white"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tvAreaDistance" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>
